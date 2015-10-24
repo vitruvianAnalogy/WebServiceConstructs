@@ -1,0 +1,19 @@
+package org.nishant.services;
+
+import net.webservicex.*;
+
+public class IPLocationFinder {
+
+	public static void main(String[] args) {
+		if(args.length!=1){
+			System.out.println("You need to send one IP address");
+		}
+		else{
+			String ipAddress = args[0];
+			GeoIPService ipService = new GeoIPService();
+			ipService
+		}
+
+	}
+
+}
