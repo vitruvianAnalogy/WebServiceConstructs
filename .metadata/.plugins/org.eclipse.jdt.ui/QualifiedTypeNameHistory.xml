@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.jws.WebService"/>
+<fullyQualifiedTypeName name="org.nishant.services.business.ProductServiceImpl"/>
+<fullyQualifiedTypeName name="javax.jws.WebMethod"/>
+</qualifiedTypeNameHistroy>

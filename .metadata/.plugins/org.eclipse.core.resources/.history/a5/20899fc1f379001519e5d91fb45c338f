@@ -1,0 +1,5 @@
+package org.nishant.services;
+
+public class ProductCatalog {
+
+}

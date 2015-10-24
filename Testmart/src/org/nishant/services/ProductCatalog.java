@@ -1,0 +1,23 @@
+package org.nishant.services;
+
+import java.util.*;
+import javax.jws.*;
+
+import org.nishant.services.business.ProductServiceImpl;
+
+@WebService
+public class ProductCatalog {
+	
+	ProductServiceImpl productService = new ProductServiceImpl();
+	
+	@WebMethod
+	public List<String> getProductCategories(){
+		return productService.getProductCategories();
+	}
+	
+	@WebMethod
+	public List<String> getProducts(String category){
+		return productService.getProducts(category);
+	}
+
+}

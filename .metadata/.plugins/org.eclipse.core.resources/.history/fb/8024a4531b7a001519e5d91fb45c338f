@@ -1,0 +1,19 @@
+package org.nishant.services.business;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ProductServiceImpl {
+	
+	List<String> books = new ArrayList<String>();
+	List<String> music = new ArrayList<String>();
+	List<String> movies = new ArrayList<String>();
+	
+	public List<String> getProductCategories(){
+		List<String> categories = new ArrayList<String>();
+		categories.add("Books");
+		categories.add("Music");
+		categories.add("Movies");
+		return categories;
+	}
+}
