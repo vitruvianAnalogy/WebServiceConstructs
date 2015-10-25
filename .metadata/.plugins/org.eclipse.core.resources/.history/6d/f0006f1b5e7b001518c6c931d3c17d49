@@ -1,0 +1,8 @@
+package org.nishant.services.model;
+
+public class Product {
+
+	private String name;
+	private String sku;
+	private Double price;
+}

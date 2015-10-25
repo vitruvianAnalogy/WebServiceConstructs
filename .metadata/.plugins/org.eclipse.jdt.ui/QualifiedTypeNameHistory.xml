@@ -3,4 +3,6 @@
 <fullyQualifiedTypeName name="javax.jws.WebService"/>
 <fullyQualifiedTypeName name="org.nishant.services.business.ProductServiceImpl"/>
 <fullyQualifiedTypeName name="javax.jws.WebMethod"/>
+<fullyQualifiedTypeName name="javax.jws.soap.SOAPBinding.Style"/>
+<fullyQualifiedTypeName name="javax.jws.soap.SOAPBinding"/>
 </qualifiedTypeNameHistroy>

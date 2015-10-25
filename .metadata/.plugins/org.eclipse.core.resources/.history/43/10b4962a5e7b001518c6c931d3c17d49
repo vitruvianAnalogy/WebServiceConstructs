@@ -1,0 +1,14 @@
+package org.nishant.services.model;
+
+public class Product {
+
+	private String name;
+	private String sku;
+	private Double price;
+	
+	Product(String name, String sku, Double price){
+		this.name = name;
+		this.sku = sku;
+		this.price = price;
+	}
+}

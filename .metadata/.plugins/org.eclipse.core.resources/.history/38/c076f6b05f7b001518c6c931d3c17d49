@@ -5,7 +5,7 @@ import javax.jws.*;
 
 import org.nishant.services.business.ProductServiceImpl;
 
-@WebService(endpointInterface="org.nishant.services.ProductCatalogInterface")
+@WebService(endpointInterface="")
 public class ProductCatalog implements ProductCatalogInterface {
 	
 	ProductServiceImpl productService = new ProductServiceImpl();

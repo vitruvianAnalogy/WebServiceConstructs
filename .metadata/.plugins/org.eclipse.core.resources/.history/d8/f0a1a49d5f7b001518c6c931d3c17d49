@@ -5,7 +5,7 @@ import javax.jws.*;
 
 import org.nishant.services.business.ProductServiceImpl;
 
-@WebService(endpointInterface="org.nishant.services.ProductCatalogInterface")
+@WebService(endpointInterface="")
 public class ProductCatalog implements ProductCatalogInterface {
 	
 	ProductServiceImpl productService = new ProductServiceImpl();
@@ -14,6 +14,7 @@ public class ProductCatalog implements ProductCatalogInterface {
 	 * @see org.nishant.services.ProductCatalogInterface#getProductCategories()
 	 */
 	@Override
+	@WebMethod(action="fetch_categories", operationName="fetchCategories")
 	public List<String> getProductCategories(){
 		return productService.getProductCategories();
 	}
@@ -22,6 +23,7 @@ public class ProductCatalog implements ProductCatalogInterface {
 	 * @see org.nishant.services.ProductCatalogInterface#getProducts(java.lang.String)
 	 */
 	@Override
+	@WebMethod
 	public List<String> getProducts(String category){
 		return productService.getProducts(category);
 	}

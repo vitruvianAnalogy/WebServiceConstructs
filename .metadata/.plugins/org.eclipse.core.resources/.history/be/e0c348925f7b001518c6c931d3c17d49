@@ -1,0 +1,13 @@
+package org.nishant.services;
+
+import java.util.List;
+
+import javax.jws.WebMethod;
+
+public interface ProductCatalogInterface {
+
+	public abstract List<String> getProductCategories();
+
+	public abstract List<String> getProducts(String category);
+
+}

@@ -5,7 +5,11 @@ import javax.jws.*;
 
 import org.nishant.services.business.ProductServiceImpl;
 
-@WebService(endpointInterface="org.nishant.services.ProductCatalogInterface")
+//Using name = "TestMartCatalog" renames the porttype in wsdl to testmartcatalog
+/*servicename changes the name of the service, so basically the URL*/
+
+@WebService(name="TestMartCatalog",portName="TestMartCatalogPort",serviceName="TestMartCatalogService",
+			targetNamespace="http://www.testmart.com")
 public class ProductCatalog implements ProductCatalogInterface {
 	
 	ProductServiceImpl productService = new ProductServiceImpl();
@@ -14,6 +18,7 @@ public class ProductCatalog implements ProductCatalogInterface {
 	 * @see org.nishant.services.ProductCatalogInterface#getProductCategories()
 	 */
 	@Override
+	@WebMethod(action="fetch_categories", operationName="fetchCategories")
 	public List<String> getProductCategories(){
 		return productService.getProductCategories();
 	}
@@ -22,6 +27,7 @@ public class ProductCatalog implements ProductCatalogInterface {
 	 * @see org.nishant.services.ProductCatalogInterface#getProducts(java.lang.String)
 	 */
 	@Override
+	@WebMethod
 	public List<String> getProducts(String category){
 		return productService.getProducts(category);
 	}
