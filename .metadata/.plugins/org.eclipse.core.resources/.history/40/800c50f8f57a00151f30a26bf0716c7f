@@ -13,7 +13,7 @@ public class ProductCatalog {
 	
 	ProductServiceImpl productService = new ProductServiceImpl();
 	
-	@WebMethod(action="fetch_categories", operationName="fetchCategories")
+	@WebMethod
 	public List<String> getProductCategories(){
 		return productService.getProductCategories();
 	}
